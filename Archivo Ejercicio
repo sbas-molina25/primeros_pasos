@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int suma;
+    suma = 0;
+    cout << "Numeros entre 100 y 200 que sean divisibles para 9: " << endl;
+
+    for (int i = 100; i <= 200; i++)
+    {
+        if (i % 9 == 0)
+        {
+            cout << i << ", ";
+            suma += i;
+        }
+    }
+    cout << endl;
+    cout << "La suma de estos numeros es: " << suma << endl;
+    return 0;
+}
